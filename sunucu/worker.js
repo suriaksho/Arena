@@ -28,5 +28,5 @@ export class Room {
       s.addEventListener("close", () => { this.g.delete(gid); if (this.host) send(this.host, { t: "left", g: gid }); });
     }
     return res();
-  },
+  }
 }
